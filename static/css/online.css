@@ -1,0 +1,211 @@
+
+#superContainer {
+	min-height: 768px;
+    height: 100%;
+    position: relative;
+    background-color: rgb(73, 170, 199);
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+
+#mod .title{
+	font-size: 30px;
+	color: #fff;
+}
+#mod .mod_col_title{
+	color: #fff;
+    font-size: 16px;
+    padding-top: 36px;
+    height: initial;
+    line-height: initial;
+    padding-bottom: 18px;
+}
+#mod .mod_col_title a{
+	color: #2f6271;
+}
+.analysis_wrap{width: 100%;}
+.analysis_content {
+    position: relative;
+    width: 100%;
+    padding: 10px 6px 10px 15px;
+    min-height: 120px;
+    line-height: 24px;
+    font-size: 14px;
+    border-radius: 3px;
+    background-color: #FFF;
+    background-color: rgba(255, 255, 255, .9);
+    resize: none;
+    overflow: hidden;
+    outline: none;
+}
+.analysis_content .txt {
+    width: 100%;
+    min-height: 100%;
+    outline: none;
+    border: 0 none;
+    background: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-size: 14px;
+    color: #2c2c2c;
+    padding-right: 72px;
+    padding-bottom: 0;
+    resize: none;
+}
+.SA .analysis_content{
+	min-height: 51px;
+}
+.icon_close {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: url(../img/icon_close.png) no-repeat 0 0;
+    background-size: 100%;
+    cursor: pointer;
+}
+.analysis_content .icon_close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+.analysis_content .txt_warm {
+    font-size: 14px;
+    color: #1b7959;
+    position: absolute;
+    bottom: 14px;
+    left: 18px;
+    margin: 0;
+    /* display: none; */
+}
+#superContainer button{
+	margin-top: 25px;
+}
+
+
+.main-title {
+    position: relative;
+    margin: 28px 0 22px 0;
+    height: 32px;
+    font-size: 24px;
+    line-height: 32px;
+    color: #fff;
+}
+.dot-line-gray {
+    width: auto;
+    height: 1px;
+    overflow: hidden;
+    background-image: url(../img/dot-line-gray.png);
+}
+.main-title .dot-line-gray {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+.main-title .title {
+    position: absolute;
+    padding-right: 26px;
+    background-color: rgb(73, 170, 199);
+    z-index: 1;
+}
+#demo-content .nav>li>a:focus,#demo-content .nav>li>a:hover{
+	background: #fff;
+	color: rgb(73, 170, 199);
+}
+#demo-content .nav>li.active>a{
+	background: #fff;
+	color: rgb(73, 170, 199);
+}
+#demo-content .nav li{
+	border-bottom: 1px solid #ccc;
+	}
+#demo-content .nav li a{
+	width: 100%;
+	padding: 0px;
+	display: inline-block;
+	color: #fff;
+	line-height: 30px;
+}
+
+#demo-content .chunk{
+	position: relative;
+    margin: 20px;
+    padding: 90px 20px;
+    min-height: 400px;
+    background: #90e2f4;
+    border-radius: 15px;
+}
+#demo-content .chunk .title{
+	font-size: 16px;
+    height: 30px;
+    line-height: 30px;
+}
+#demo-content .chunk .title .docs{
+	font-size: 12px;
+}
+
+.chunk .result_words {
+    height: initial;
+    margin-top: 0;
+    background-color: #90e2f4;
+    border-radius: 0;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    /* padding: 30px 74px; */
+    width: 100%;
+    padding: 20px 18px;
+}
+.chunk .result_words .txt_bor {
+    display: inline-block;
+    margin: 0 5px 10px;
+    margin-bottom: 14px;
+    padding: 0 8px;
+    height: 29px;
+    line-height: 29px;
+    color: #FFF;
+    border-radius: 2px;
+    font-size: 13px;
+    cursor: pointer;
+}
+.chunk .result_words .normal {
+    background-color: #76c9dd;
+    color: #2c2c2c;
+}
+
+.chunk .result_words .stress {
+    background-color: #10667f;
+    color: #fff;
+}
+
+#demo-content .content_title{
+	color: #fff;
+	height: initial;
+    line-height: initial;
+    font-size: 16px;
+    padding: 16px 0;
+}
+
+#demo-content .answer{
+	font-size: 18px;
+    color: red;
+}
+#demo-content .result{
+	border-radius: 5px;
+	background-color: rgba(255, 255, 255, .9);
+	width: 100%;
+    padding: 20px 18px;
+    color: #777;
+}
+#demo-content .result_mc{
+	font-size: 20px;
+	color: #2c2c2c;
+}
+
+
+@media only screen and (max-width:768px) {
+	#demo-content .result_mc{font-size: 18px;}
+}
+@media only screen and (max-width: 320px) {
+	#demo-content .result_mc{font-size: 14px;}
+}

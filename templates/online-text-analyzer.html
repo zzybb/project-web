@@ -1,0 +1,545 @@
+<!DOCTYPE HTML>
+<html class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>文本分析 - 桂林电子科技大学</title>
+    <meta name="keywords" content="自然语言处理,智能客服,NLP,NLU,文本挖掘,文本分类,语义分析,语义识别,意图识别,多轮对话,知识图谱">
+    <meta name="description" content="桂林电子科技大学国内领先的自然语言处理专家，为企业提供智能客服、聊天机器人、文本挖掘、知识图谱、个性化推荐、垂直搜索等人工智能服务。火焰科技推出全栈式文本处理功能，智能客服，聊天机器人，文本审核等，帮助企业提升运营效率和经营业绩。">
+    <!-- 使用url函数转换相关路径 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css')}}"/>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-hover-dropdown/2.2.1/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
+
+    <!-- 通过自有函数输出HTML头部信息 -->
+    <meta name="description" content="文本分析" />
+<link rel="alternate" type="application/rss+xml" title="文本分析 &raquo; 广州火焰信息科技有限公司 | 呱呱智能 &raquo; RSS 2.0" href="http://www.birdbot.cn/feed/online-text-analyzer.html" />
+<link rel="alternate" type="application/rdf+xml" title="文本分析 &raquo; 广州火焰信息科技有限公司 | 呱呱智能 &raquo; RSS 1.0" href="http://www.birdbot.cn/feed/rss/online-text-analyzer.html" />
+<link rel="alternate" type="application/atom+xml" title="文本分析 &raquo; 广州火焰信息科技有限公司 | 呱呱智能 &raquo; ATOM 1.0" href="http://www.birdbot.cn/feed/atom/online-text-analyzer.html" />
+<script type="text/javascript">
+(function () {
+    window.TypechoComment = {
+        dom : function (id) {
+            return document.getElementById(id);
+        },
+    
+        create : function (tag, attr) {
+            var el = document.createElement(tag);
+        
+            for (var key in attr) {
+                el.setAttribute(key, attr[key]);
+            }
+        
+            return el;
+        },
+
+        reply : function (cid, coid) {
+            var comment = this.dom(cid), parent = comment.parentNode,
+                response = this.dom('respond-page-7'), input = this.dom('comment-parent'),
+                form = 'form' == response.tagName ? response : response.getElementsByTagName('form')[0],
+                textarea = response.getElementsByTagName('textarea')[0];
+
+            if (null == input) {
+                input = this.create('input', {
+                    'type' : 'hidden',
+                    'name' : 'parent',
+                    'id'   : 'comment-parent'
+                });
+
+                form.appendChild(input);
+            }
+
+            input.setAttribute('value', coid);
+
+            if (null == this.dom('comment-form-place-holder')) {
+                var holder = this.create('div', {
+                    'id' : 'comment-form-place-holder'
+                });
+
+                response.parentNode.insertBefore(holder, response);
+            }
+
+            comment.appendChild(response);
+            this.dom('cancel-comment-reply-link').style.display = '';
+
+            if (null != textarea && 'text' == textarea.name) {
+                textarea.focus();
+            }
+
+            return false;
+        },
+
+        cancelReply : function () {
+            var response = this.dom('respond-page-7'),
+            holder = this.dom('comment-form-place-holder'), input = this.dom('comment-parent');
+
+            if (null != input) {
+                input.parentNode.removeChild(input);
+            }
+
+            if (null == holder) {
+                return true;
+            }
+
+            this.dom('cancel-comment-reply-link').style.display = 'none';
+            holder.parentNode.insertBefore(response, holder);
+            return false;
+        }
+    };
+})();
+</script>
+<script type="text/javascript">
+(function () {
+    var event = document.addEventListener ? {
+        add: 'addEventListener',
+        triggers: ['scroll', 'mousemove', 'keyup', 'touchstart'],
+        load: 'DOMContentLoaded'
+    } : {
+        add: 'attachEvent',
+        triggers: ['onfocus', 'onmousemove', 'onkeyup', 'ontouchstart'],
+        load: 'onload'
+    }, added = false;
+
+    document[event.add](event.load, function () {
+        var r = document.getElementById('respond-page-7'),
+            input = document.createElement('input');
+        input.type = 'hidden';
+        input.name = '_';
+        input.value = (function () {
+    var _sLnKR = //'10r'
+'d3'+/* '6VG'//'6VG' */''+'4'//'nVg'
++'0'//'cU'
++/* '9'//'9' */''+'03'//'2B'
++//'bXL'
+'b0'+//'1'
+'86'+'7'//'el1'
++'f2'//'x'
++'a6'//'GH'
++//'Y'
+'0da'+'63'//'E'
++//'6'
+'6'+''///*'QEN'*/'QEN'
++//'v'
+'0a'+//'rgs'
+'7'+'f9'//'8'
++//'Bz'
+'fee'+//'1GH'
+'4'+'b'//'A'
++'36'//'I'
+, _yrQxQ = [[20,21]];
+    
+    for (var i = 0; i < _yrQxQ.length; i ++) {
+        _sLnKR = _sLnKR.substring(0, _yrQxQ[i][0]) + _sLnKR.substring(_yrQxQ[i][1]);
+    }
+
+    return _sLnKR;
+})();
+
+        if (null != r) {
+            var forms = r.getElementsByTagName('form');
+            if (forms.length > 0) {
+                function append() {
+                    if (!added) {
+                        forms[0].appendChild(input);
+                        added = true;
+                    }
+                }
+            
+                for (var i = 0; i < event.triggers.length; i ++) {
+                    var trigger = event.triggers[i];
+                    document[event.add](trigger, append);
+                    window[event.add](trigger, append);
+                }
+            }
+        }
+    });
+})();
+</script>
+</head>
+
+
+<body>
+
+    <!--导航-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle x collapsed" data-toggle="collapse" data-target="#nav-collapse" aria-expanded="false">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/home.html">
+                    <img src="http://www.birdbot.cn/usr/themes/hykj/img/logo2.png" class="hidden-sm"/>
+                    <img src="http://www.birdbot.cn/usr/themes/hykj/img/logo3.png" class="visible-sm"/>
+                </a>
+            </div>
+        
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="nav-collapse">
+                <ul class="nav navbar-nav">
+                    <li id="navbar-home" class="active"><a href="/home.html">网站首页</a></li>
+                    <li id="navbar-product" class="dropdown">
+                        <a href="/product-qa.html" class="dropdown-toggle" data-toggle="dropdown" role="button" data-hover='dropdown'>产品服务<span class="caret visible-xs-inline-block"></span></a>
+                        <ul class="dropdown-menu">
+                                                                                                                                                                <li><a href="http://www.birdbot.cn/product-qa.html">智能客服</a></li>
+                                                                                                                <li><a href="http://www.birdbot.cn/product-ai.html">人机交互</a></li>
+                                                                                                                <li><a href="http://www.birdbot.cn/product-bot.html">聊天机器人</a></li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                        </ul>
+                    </li>
+                    <li id="navbar-online" class="dropdown">
+                        <a href="/online-text-analyzer.html" class="dropdown-toggle" data-toggle="dropdown" role="button" data-hover='dropdown'>在线体验<span class="caret visible-xs-inline-block"></span></a>
+                        <ul class="dropdown-menu">
+                                                                                                                                                                                                                                                                                                                            <li><a href="http://www.birdbot.cn/online-text-analyzer.html">文本分析</a></li>
+                                                                                                                <li><a href="http://www.birdbot.cn/online-sent-similarity.html">语义比较</a></li>
+                                                                                                                <li><a href="http://www.birdbot.cn/online-machine-compose.html">机器创作</a></li>
+                                                                                                                <li><a href="http://www.birdbot.cn/online-word-analogy.html">词义联想</a></li>
+                                                                                                                <li><a href="http://www.birdbot.cn/online-factual-qa.html">智能问答</a></li>
+                                                                                                                <li><a href="http://www.birdbot.cn/online-appointment.html">在线预约</a></li>
+                                                                                                                                </ul>
+                    </li>
+                    <li id="navbar-articles" class=""><a href="/archives">资讯|技术</a></li>
+                    <li id="navbar-articles" class=""><a href="/qa-help-center.html">帮助中心</a></li>
+                    <li id="navbar-about" class=""><a href="/about.html">关于我们</a></li>
+                    <li class="search hidden-sm" style="display:none;">
+                        <form class="navbar-form navbar-left" method="post" action=''>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="s" name="s" placeholder="Search">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="submit"><span class="fa fa-search"></span></button>
+                                </span>
+                            </div>
+                        </form>
+                    </li>
+                    <li class="navbar-nav-btn text-center" style="display:block">
+                        <button type="button" class="btn btn-default" onclick="toLogin()">登录</button>
+                        <button type="button" class="btn btn-default btn-info" onclick="toRegister()">免费试用</button>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <!--导航 end-->
+
+    <script>
+        var arr = new Array('navbar-home', 'navbar-product', 'navbar-online', 'navbar-articles', 'navbar-about');
+        for (j = 0; j < arr.length; j++) {
+            document.getElementById(arr[j]).classList.remove('active');
+        }
+        document.getElementById('navbar-online').classList.add('active');
+    </script>
+
+    <link rel="stylesheet" href="http://www.birdbot.cn/usr/themes/hykj/css/online.css">
+    <link href="https://cdn.bootcss.com/jqcloud/1.0.4/jqcloud.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jqcloud/1.0.4/jqcloud-1.0.4.min.js"></script>
+
+    <style>
+		div.jqcloud span.w1 {
+			color: #6c80ea
+		}
+
+		div.jqcloud span.w2 {
+			color: #dc91db
+		}
+
+		div.jqcloud span.w3 {
+			color: #0fa9ff
+		}
+
+		div.jqcloud span.w4 {
+			color: #60cc07
+		}
+
+		div.jqcloud span.w5 {
+			color: #a190dd
+		}
+
+		div.jqcloud span.w8 {
+			color: #fdb500
+		}
+
+		div.jqcloud span.w10 {
+			color: #ffe600
+		}
+	</style>
+
+    <div id="superContainer">
+        <div class="container" id="mod">
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <p class="title">单文本分析</p>
+                </div>
+                <div class="col-xs-12">
+                    <p class="mod_col_title">输入一段想分析的文字：
+                        <a class="replaced" href="#" title="换一段示例" onclick="replaced()">换一段示例</a>
+                        <a href="javascript:void(0)" onclick="toRegister()">接口调用</a>
+                    </p>
+                </div>
+                <div class="col-xs-12">
+                    <div class="analysis_wrap">
+                        <div class="analysis_content ">
+                            <textarea class="txt" name="" id="input_sec1" onkeydown="keySend(event);">夏天来临，皮肤在强烈紫外线的照射下，晒伤不可避免，因此，晒后及时修复显得尤为重要，否则可能会造成长期伤害。专家表示，选择晒后护肤品要慎重，芦荟凝胶是最安全，有效的一种选择，晒伤严重者，还请及时就医。</textarea>
+                            <i class="icon_close" onclick="clearWord()"></i>
+                            <p class="txt_warm">体验版最多可输入120个字</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 text-center">
+                    <button type="button" id="btn" data-loading-text="Loading..." class="btn btn-primary btn-lg" onclick="startAnalysis()">开始分析</button>
+                </div>
+            </div>
+        </div>
+    
+        <div class="container">
+            <div class="main-title">
+                <span class="dot-line-gray"></span>
+                <span class="title">分析结果</span>
+            </div>
+        </div>
+        
+        <div class="container" id="demo-content">
+            <div class="row">
+                <div class="col-md-2 visible-md visible-lg">
+                    <div id="nav">
+                        <ul class="nav nav-stacked text-center" style="margin-top:100px;">
+                            <li><a href="#item1">中文分词</a></li>
+                            <li><a href="#item2">词云分析</a></li>
+                            <li><a href="#item3">主题识别</a></li>
+                            <li><a href="#item4">敏感过滤</a></li>
+                            <li><a href="#item5">情感极性</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-10 col-xs-12">
+                    <div data-spy="scroll" style="overflow: auto;height:400px;" data-target="#nav" data-offset="0">
+                        <div class="chunk" id="item1">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="title">中文分词:
+                                        <a class="docs" href="/archives" target="_blank" style="display: none;">查看文档</a>
+                                        <a class="docs feedback" style="display: none;">结果不正确</a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div id="mCSB_1_container" class="result_words">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chunk" id="item2">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="title">词云分析:
+                                        <a class="docs" href="/archives" target="_blank" style="display: none;">查看文档</a>
+                                        <a class="docs feedback" style="display: none;">结果不正确</a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div id="mCSB_2_container" class="result_words" style="height: 350px;">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chunk" id="item3">
+                            <a style="position: relative;top: -280px;display:block;height:0;"></a>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="title">主题识别:
+                                        <a class="docs" href="/archives" target="_blank" style="display: none;">查看文档</a>
+                                        <a class="docs feedback" style="display: none;">结果不正确</a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div id="mCSB_3_container" class="result_words">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chunk" id="item4">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="title">敏感词过滤:
+                                        <a class="docs" href="/archives" target="_blank" style="display: none;">查看文档</a>
+                                        <a class="docs feedback" style="display: none;">结果不正确</a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div id="mCSB_4_container" class="result_words">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chunk" id="item5">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="title">情感极性:
+                                        <a class="docs" href="/archives" target="_blank" style="display: none;">查看文档</a>
+                                        <a class="docs feedback" style="display: none;">结果不正确</a>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div id="mCSB_5_container" class="result_words">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p style="color: #fff;margin-left: 20px;">备注: 在线检测仅作为部分效果体验，若您有特殊需求，请<a href="/about.html#contact">联系客服</a>，享受一对一定制服务</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="http://www.birdbot.cn/usr/themes/hykj/js/analyzer.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function(){
+            // $('.chunk').mouseenter(function(){
+            //     $(this).find('.docs').show()
+            // })
+            // $('.chunk').mouseleave(function(){
+            //     $(this).find('.docs').hide()
+            // })
+            $('#btn').click()
+        })
+    </script>
+
+
+    <!--脚部-->
+		<div class="index-version">
+			<div class="container">
+				<h2 class="about-text">现在选择火焰，让您的服务更加完美</h2>	
+				<div class="row" style="display:block;">
+					<div class="col-md-4 col-xs-12 col-md-push-4">
+						<div class="input-group input-group-lg">
+					      	<input type="text" class="form-control" placeholder="请填写您的手机号码">
+					      	<span class="input-group-btn">
+					        	<button class="btn" type="button" onclick="toRegister()" style="background: #3bb4f2;border-color: #3bb4f2;color: #fff;">免费试用</button>
+					      	</span>
+					    </div><!-- /input-group -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="container">
+				<div class="row" style="margin-bottom: 20px;">
+					<div class="col-md-2 -col-xs-12 text-center">
+						<a href="/home.html"><img src="http://www.birdbot.cn/usr/themes/hykj/img/1_21.png" class="img-responsive hidden-xs hidden-sm"/></a>
+						<p class='footer-h1 visible-xs visible-sm'>火焰科技</p>
+					</div>	
+					<div class="col-md-8 col-xs-12 footer-main">
+						<div class="row">
+							<div class="col-md-3 col-xs-6 text-center">
+								<p class="footer-title">产品服务</p>
+								<hr class="redshort" />
+								<ul class="list-unstyled">
+									<li><a href="/product-qa.html">智能客服</a></li>
+									<li><a href="/product-ai.html">人机交互</a></li>
+									<li><a href="/product-bot.html">聊天机器人</a></li>
+								</ul>
+							</div>
+							<div class="col-md-3 col-xs-6 text-center">
+								<p class="footer-title">在线体验</p>
+								<hr class="redshort" />
+								<ul class="list-unstyled">
+									<li><a href="/online-text-analyzer.html">文本分析</a></li>
+									<li><a href="/online-machine-compose.html">机器创作</a></li>
+									<li><a href="/online-word-analogy.html">语义联想</a></li>
+									<li><a href="/online-factual-qa.html">智能问答</a></li>
+									<li><a href="/online-ai-bi.html">交互式BI</a></li>
+								</ul>
+							</div>
+							<div class="col-md-3 col-xs-6 text-center">
+								<p class="footer-title">资讯|技术</p>
+								<hr class="redshort" />
+								<ul class="list-unstyled">
+									<li><a href="/archives/official/">公司新闻</a></li>
+									<li><a href="/archives/news/">行业资讯</a></li>
+									<li><a href="/archives/technology/">技术分享</a></li>
+									<li><a href="/archives/something/">奇闻逸事</a></li>
+								</ul>
+							</div>
+							<div class="col-md-3 col-xs-6 text-center">
+							    <p class="footer-title">帮助中心</p>
+								<hr class="redshort" />
+								<ul class="list-unstyled">
+									<li><a href="/qa-help-center.html">帮助中心</a></li>
+								</ul>
+								<p class="footer-title">关于我们</p>
+								<hr class="redshort" />
+								<ul class="list-unstyled">
+									<li><a href="/about.html">公司简介</a></li>
+									<li><a href="/about.html#contact">联系我们</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-2 col-xs-12 footer-QR text-center hidden-xs">
+						<img src="http://www.birdbot.cn/usr/themes/hykj/img/erweima.png" alt="" />
+						<p>扫描二维码</p>
+						<p>关注广州火焰科技抢先体验</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<p class="text-center"><a style="color: #fff;" href="http://www.miitbeian.gov.cn/">粤ICP备16083444号-1</a></p>
+						<p class="text-center">Copyright © 广州火焰信息科技有限公司版权所有</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+    <!--脚部 end-->
+
+    <!--右侧悬浮-->
+    <div class="rightslide hidden-xs">
+        <ul>
+            <li class="touse" onclick="toRegister()" style="display:block;">
+                <span class="fa fa-user"></span>立即试用
+                <div class="text-tip"><p>点击，立即试用</p></div>
+            </li>
+            <li>
+                <span class="fa fa-phone"></span>电话咨询
+                <div class="text-tip"><p>18520129458</p></div>
+            </li>
+             <li class="demo" style="display:block;">
+                <a href="http://www.birdbot.cn/online-appointment.html">
+                    <span><img style="width:30px;" src="http://www.birdbot.cn/usr/themes/hykj/img/demo.png"/></span>预约演示
+                </a>
+            </li>
+            <li style="display:none;">
+                <span class="fa fa-wechat"></span>微信咨询
+                <div class="qrcode">
+                    <img src="http://www.birdbot.cn/usr/themes/hykj/img/erweima.png"/>
+                    <p>扫码关注官方微信</p>
+                </div>
+            </li>
+            <!--<li class="online">-->
+            <!--    <a target="_blank" href="http://open.birdbot.cn/pc/onlineBypcKey.do?pcKey=793be522e20d4f2497e1c37bbbef5f26&image=1">-->
+            <!--        <span><img style="width:46px;" src="http://www.birdbot.cn/usr/themes/hykj/img/logo.png"/></span>在线咨询-->
+            <!--    </a>-->
+            <!--</li>-->
+            <li class="goto"><span class="fa fa-caret-up"></span></li>
+        </ul>
+    </div>
+
+    <!--右侧悬浮 end-->
+    <script src="http://www.birdbot.cn/usr/themes/hykj/js/main.js" type="text/javascript"></script>
+    <script src="http://open.birdbot.cn/resources/js/chat/pc.js?pcKey=793be522e20d4f2497e1c37bbbef5f26" ></script>
+    <!--<script src="http://test.birdbot.cn/resources/js/chat/pc.js?pcKey=6b3d758349ae47a6a40e7037caa1f1ae" ></script>-->
+
+</body>
+</html>
