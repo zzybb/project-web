@@ -1,0 +1,76 @@
+
+#banner .item{
+	height: 400px;
+}
+
+#banner .banner1{
+	   background: url(../res/1_06.png) no-repeat top center;
+}
+#banner .banner2{
+	   background: url(../res/2_26.png) no-repeat top center;
+}
+#banner .banner3{
+	   background: url(../res/2_27.png) no-repeat top center;
+}
+#banner .banner4{
+	   background: url(../res/2_28.png) no-repeat top center;
+}
+#banner .carousel-caption{
+	left: 10%;
+	text-align: left;
+	bottom: 50px;
+}
+#banner .carousel-caption .title{
+	font-size: 30px;
+}
+#banner .carousel-caption .text{
+	font-size: 20px;
+}
+#index .row h2 {
+	padding: 0;
+	margin: 24px 0 16px 0;
+	font-size: 18px;
+	color: #000
+}
+
+#index .row p {
+	font-size: 16px;
+	color: #777;
+	line-height: 24px
+}
+
+#index .row .col-md-4 {
+	margin-top: 36px;
+	padding: 0 30px;
+	text-align: center
+}
+#index .row .fa {
+	font-size: 70px;
+	color: #8dc0e5;
+}
+
+#index .row .anything,
+#index .row .mutual {
+	padding: 0 40px
+}
+
+#index .row-line.gray {
+	margin-top: 48px;
+	overflow: hidden;
+	height: 1px;
+	background-color: #e1e1e1
+}
+
+
+@media only screen and (max-width: 768px) {
+    
+    #banner .item{height: 300px;}
+    
+    #banner .carousel-caption{left:15%;text-align: center;top: 100px;}
+    #banner .carousel-caption .title{
+        font-size: 30px;
+    }
+    #banner .carousel-caption .text{
+        font-size: 16px;
+    }
+}
