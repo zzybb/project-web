@@ -59,7 +59,7 @@
     display: inline-block;
     width: 25px;
     height: 25px;
-    background: url(../img/icon_close.png) no-repeat 0 0;
+    /*background: url(../img/icon_close.png) no-repeat 0 0;*/
     background-size: 100%;
     cursor: pointer;
 }
@@ -94,7 +94,7 @@
     width: auto;
     height: 1px;
     overflow: hidden;
-    background-image: url(../img/dot-line-gray.png);
+    /*background-image: url(../img/dot-line-gray.png);*/
 }
 .main-title .dot-line-gray {
     position: absolute;
