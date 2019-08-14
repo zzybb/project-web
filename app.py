@@ -1,6 +1,11 @@
 import numpy as np
 from flask import Flask,render_template,request
+from datetime import timedelta
 app = Flask(__name__)
+
+# config
+app.config['DEBUG'] = True
+app.config['SEND_FILE_MAX_AGE_DEFAULT'] = timedelta(seconds=1)
 
 @app.route("/")
 def index():
@@ -16,4 +21,4 @@ def online_text_similarity():
 
 
 if __name__ == '__main__':
-    app.run(host = '0.0.0.0',port = 5000)
+    app.run(host = '0.0.0.0',port = 5000,threaded=True,debug=True)
