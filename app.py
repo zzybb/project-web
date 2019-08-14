@@ -5,10 +5,14 @@ app = Flask(__name__)
 @app.route("/")
 def index():
     return render_template("index.html")
-    
+
 @app.route("/text_analyzer")
 def online_text_analyzer():
 	return render_template("online-text-analyzer.html")
+
+@app.route("/text_similarity")
+def online_text_similarity():
+	return render_template("online-sent-similarity.html")
 
 
 if __name__ == '__main__':

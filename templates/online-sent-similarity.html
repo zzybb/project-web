@@ -1,4 +1,4 @@
-﻿<!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html class="no-js">
 <head>
     <meta charset="UTF-8">
@@ -9,7 +9,6 @@
     <meta name="keywords" content="自然语言处理,智能客服,NLP,NLU,文本挖掘,文本分类,语义分析,语义识别,意图识别,多轮对话,知识图谱">
     <meta name="description" content="桂林电子科技大学是国内领先的自然语言处理专家，为企业提供智能客服、聊天机器人、文本挖掘、知识图谱、个性化推荐、垂直搜索等人工智能服务。桂林电子科技大学推出全栈式文本处理功能，智能客服，聊天机器人，文本审核等，帮助企业提升运营效率和经营业绩。">
     <!-- 使用url函数转换相关路径 css path-->
-    <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css')}}"/> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}"/>
@@ -19,7 +18,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-hover-dropdown/2.2.1/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
 
     <!-- 通过自有函数输出HTML头部信息 -->
-    <meta name="description" content="桂林电子科技大学人工智能交叉研究院是国内领先的自然语言处理专家，为企业提供智能客服、聊天机器人、文本挖掘、知识图谱、个性化推荐、垂直搜索等人工智能服务。桂林电子科技大学推出全栈式文本处理功能，智能客服，聊天机器人，文本审核等，帮助企业提升运营效率和经营业绩。" />
+    <meta name="description" content="语义比较" />
+<link rel="alternate" type="application/rss+xml" title="语义比较 &raquo; 桂林电子科技大学 &raquo; RSS 2.0" href="online_text_analyzer" />
+<link rel="alternate" type="application/rdf+xml" title="语义比较 &raquo; 桂林电子科技大学 &raquo; RSS 1.0" href="online_text_analyzer" />
+<link rel="alternate" type="application/atom+xml" title="语义比较 &raquo; 桂林电子科技大学 &raquo; ATOM 1.0" href="online_text_analyzer" />
 <script type="text/javascript">
 (function () {
     window.TypechoComment = {
@@ -39,7 +41,7 @@
 
         reply : function (cid, coid) {
             var comment = this.dom(cid), parent = comment.parentNode,
-                response = this.dom('respond-page-3'), input = this.dom('comment-parent'),
+                response = this.dom('respond-page-370'), input = this.dom('comment-parent'),
                 form = 'form' == response.tagName ? response : response.getElementsByTagName('form')[0],
                 textarea = response.getElementsByTagName('textarea')[0];
 
@@ -74,7 +76,7 @@
         },
 
         cancelReply : function () {
-            var response = this.dom('respond-page-3'),
+            var response = this.dom('respond-page-370'),
             holder = this.dom('comment-form-place-holder'), input = this.dom('comment-parent');
 
             if (null != input) {
@@ -105,36 +107,41 @@
     }, added = false;
 
     document[event.add](event.load, function () {
-        var r = document.getElementById('respond-page-3'),
+        var r = document.getElementById('respond-page-370'),
             input = document.createElement('input');
         input.type = 'hidden';
         input.name = '_';
         input.value = (function () {
-    var _vg2i8 = //'UrM'
-'0ee'+//'C'
-'C'+//'r'
-'r'+//'5u'
-'600'+//'q'
-'6'+//'JKQ'
-'d2'+'4f'//'RY'
-+'0'//'E5c'
-+//'V'
-'V'+'ab'//'10'
-+//'E'
-'E'+//'A8O'
-'c'+//'X1'
-'5f'+//'VY'
-'f0c'+//'K'
-'445'+//'G'
-'a11'+'396'//'dgo'
-+//'1w'
-'3c5', _4uDSkq = [[3,4],[3,4],[12,13],[14,15]];
+    var _wVre = 'B'//'B'
++'e6'//'Ge'
++//'FTv'
+'2fa'+'5'//'0'
++'tf'//'tf'
++'oWY'//'oWY'
++'4'//'GXu'
++//'9Rm'
+'48f'+'e'//'e'
++'I'//'I'
++//'DL'
+'36a'+//'rs'
+'7'+'DD2'//'DD2'
++//'x'
+'b8a'+''///*'Om'*/'Om'
++//'r'
+'1'+'9d7'//'jFU'
++//'R'
+'ef5'+'eO'//'eO'
++'10e'//'C'
++//'UF'
+'1e6'+//'j'
+'j'+//'E7'
+'4b', _CLBh = [[0,1],[6,8],[6,9],[10,11],[10,11],[14,17],[24,26],[30,31]];
     
-    for (var i = 0; i < _4uDSkq.length; i ++) {
-        _vg2i8 = _vg2i8.substring(0, _4uDSkq[i][0]) + _vg2i8.substring(_4uDSkq[i][1]);
+    for (var i = 0; i < _CLBh.length; i ++) {
+        _wVre = _wVre.substring(0, _CLBh[i][0]) + _wVre.substring(_CLBh[i][1]);
     }
 
-    return _vg2i8;
+    return _wVre;
 })();
 
         if (null != r) {
@@ -163,6 +170,9 @@
 <body>
 
     <!--导航-->
+<body>
+
+     <!--导航-->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -228,160 +238,141 @@
         for (j = 0; j < arr.length; j++) {
             document.getElementById(arr[j]).classList.remove('active');
         }
-        document.getElementById('navbar-home').classList.add('active');
+        document.getElementById('navbar-online').classList.add('active');
     </script>
 
-    <!--main-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/online.css')}}">
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
-
-    <div id="banner" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#banner" data-slide-to="0" class="active"></li>
-            <li data-target="#banner" data-slide-to="1"></li>
-            <li data-target="#banner" data-slide-to="2"></li>
-            <!-- <li data-target="#banner" data-slide-to="3"></li> -->
-        </ol>
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-            <div class="item banner3 active">
-                <div class="carousel-caption">
-                    <p class="title">情感分类，语义比较火热上线</p>
+    <div id="superContainer">
+        <div class="container SA" id="mod">
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <p class="title">语义相似度</p>
                 </div>
-            </div>
-            <div class="item banner1">
-                <div class="carousel-caption">
-                    <p class="title">全栈式中文语义开放平台</p>
+                <div class="col-xs-12">
+                    <p class="mod_col_title">请输入第一个句子：
+                        <a class="replaced" href="#" title="换一段示例" onclick="replaced()">换一段示例</a>
+                        <a href="javascript:void(0)" onclick="toRegister()">接口调用</a>
+                    </p>
                 </div>
-            </div>
-            <div class="item banner2">
-                <div class="carousel-caption">
-                    <p class="title">见所未见，智能客服2.0闪亮登场</p>
+                <div class="col-xs-12">
+                    <div class="analysis_wrap">
+                        <div class="analysis_content ">
+                            <textarea class="txt" name="" id="input_sec2_1" onkeydown="keySend(event);">广州有多少个客运站？</textarea>
+                            <i class="icon_close" onclick="clearWord(1)"></i>
+                            <p class="txt_warm">体验版最多可输入30个字</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <p class="mod_col_title">请输入第二个句子：</p>
+                </div>
+                <div class="col-xs-12">
+                    <div class="analysis_wrap">
+                        <div class="analysis_content ">
+                            <textarea class="txt" name="" id="input_sec2_2" onkeydown="keySend(event);">广州客运站的数目？</textarea>
+                            <i class="icon_close" onclick="clearWord(2)"></i>
+                            <p class="txt_warm">体验版最多可输入30个字</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 text-center">
+                    <button type="button" id="btn" data-loading-text="Loading..." class="btn btn-primary btn-lg" onclick="SentSim()">计算相似度</button>
                 </div>
             </div>
         </div>
-        <!-- Controls -->
-        <a class="left carousel-control" href="#banner" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#banner" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
-    <div class="container" id="index" style="margin-bottom: 20px">
-        <div class="row">
-            <div class="col-md-4 col-xs-12 tech">
-              <span class="fa fa-pie-chart"></span>
-              <h2>核心技术</h2>
-              <p>专注自然语言处理技术，拥有多年的技术积累。自主研发各类算法模型，在国内数项赛事上获得多项冠军，为精准和深度的中文语义分析提供坚实基础。</p>
-            </div>
-            <div class="col-md-4 col-xs-12 anything">
-              <span class="fa fa-eercast"></span>
-              <h2>全栈服务</h2>
-              <p>NLP全栈服务，一站式解决全套中文语义分析需求。多项语义分析API，从词法、句法到篇章，从情感、实体、分类到聚类等多维度文本挖掘，实现数据的价值化。</p>
-            </div>
-            <div class="col-md-4 col-xs-12 start">
-              <span class="fa fa-space-shuttle"></span>
-              <h2>极速体验</h2>
-              <p>全栈式开放中文语义API，各类NLP应用，极速注册，极速体验。</p>
+    
+        <div class="container">
+            <div class="main-title">
+                <span class="dot-line-gray"></span>
+                <span class="title">以上两个句子的相似度为</span>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-4 col-xs-12 industry">
-              <span class="fa fa-line-chart"></span>
-              <h2>领先行业</h2>
-              <p>自主研发的智能交互及决策引擎，结合独特的算法模型，将自然语言理解的技术与实践完美结合。</p>
-            </div>
-            <div class="col-md-4 col-xs-12 mutual">
-              <span class="fa fa-user-plus"></span>
-              <h2>自由定制</h2>
-              <p>可定制各类算法模型和解决方案，针对用户的个性化需求提供行业分词、行业实体识别、文本分类等定制化解决方案。</p>
-            </div>
-            <div class="col-md-4 col-xs-12 company">
-              <span class="fa fa-bank"></span>
-              <h2>服务保障</h2>
-              <p>成功为数千家用户提供多类型服务，技术、服务和处理能力稳定可靠。</p>
+        
+        <div class="container" id="demo-content">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="result" id="result">
+                        
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
+    
+    <!-- main function -->
+    <script src="{{ url_for('static', filename='js/sentsim.js')}}" type="text/javascript"></script>
     <script type="text/javascript">
         $(function(){
-            $('.carousel').carousel({
-                    interval: 2000
-                })
-            })
+            $('#btn').click()
+        })
     </script>
 
-    <!--main end-->
 
-    
     <!--脚部-->
-		<footer>
-			<div class="container">
-				<div class="row" style="margin-bottom: 20px;">
-					<div class="col-md-2 -col-xs-12 text-center">
-						<a href="/"><img src="{{ url_for('static', filename='res/GUETMain.jpg')}}" class="img-responsive hidden-xs hidden-sm"/></a>
-						<p class='footer-h1 visible-xs visible-sm'>桂林电子科技大学</p>
-					</div>	
-					<div class="col-md-8 col-xs-12 footer-main">
-						<div class="row">
-							<div class="col-md-3 col-xs-6 text-center">
-								<p class="footer-title">产品服务</p>
-								<hr class="redshort" />
-								<ul class="list-unstyled">
-									<li><a href="#">智能客服</a></li>
-									<li><a href="#">人机交互</a></li>
-									<li><a href="#">聊天机器人</a></li>
-								</ul>
-							</div>
-							<div class="col-md-3 col-xs-6 text-center">
-								<p class="footer-title">在线体验</p>
-								<hr class="redshort" />
-								<ul class="list-unstyled">
-									<li><a href="text_analyzer">文本分析</a></li>
+        <footer>
+            <div class="container">
+                <div class="row" style="margin-bottom: 20px;">
+                    <div class="col-md-2 -col-xs-12 text-center">
+                        <a href="/"><img src="{{ url_for('static', filename='res/GUETMain.jpg')}}" class="img-responsive hidden-xs hidden-sm"/></a>
+                        <p class='footer-h1 visible-xs visible-sm'>桂林电子科技大学</p>
+                    </div>  
+                    <div class="col-md-8 col-xs-12 footer-main">
+                        <div class="row">
+                            <div class="col-md-3 col-xs-6 text-center">
+                                <p class="footer-title">产品服务</p>
+                                <hr class="redshort" />
+                                <ul class="list-unstyled">
+                                    <li><a href="#">智能客服</a></li>
+                                    <li><a href="#">人机交互</a></li>
+                                    <li><a href="#">聊天机器人</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3 col-xs-6 text-center">
+                                <p class="footer-title">在线体验</p>
+                                <hr class="redshort" />
+                                <ul class="list-unstyled">
+                                    <li><a href="text_analyzer">文本分析</a></li>
                                     <li><a href="text_similarity">语义比较</a></li>
-									<li><a href="#">机器创作</a></li>
-									<li><a href="#">语义联想</a></li>
-									<li><a href="#">智能问答</a></li>
-									<li><a href="#">交互式BI</a></li>
-								</ul>
-							</div>
-							<div class="col-md-3 col-xs-6 text-center">
-								<p class="footer-title">资讯|技术</p>
-								<hr class="redshort" />
-								<ul class="list-unstyled">
-									<li><a href="#">学校新闻</a></li>
-									<li><a href="#">行业资讯</a></li>
-									<li><a href="#">技术分享</a></li>
-								</ul>
-							</div>
-							<div class="col-md-3 col-xs-6 text-center">
-							    <p class="footer-title">帮助中心</p>
-								<hr class="redshort" />
-								<ul class="list-unstyled">
-									<li><a href="#">帮助中心</a></li>
-								</ul>
-								<p class="footer-title">关于我们</p>
-								<hr class="redshort" />
-								<ul class="list-unstyled">
-									<li><a href="#">学校简介</a></li>
-									<li><a href="#">联系我们</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-12">
-						<p class="text-center">Copyright @桂林电子科技大学版权所有</p>
-					</div>
-				</div>
-			</div>
-		</footer>
+                                    <li><a href="#">机器创作</a></li>
+                                    <li><a href="#">语义联想</a></li>
+                                    <li><a href="#">智能问答</a></li>
+                                    <li><a href="#">交互式BI</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3 col-xs-6 text-center">
+                                <p class="footer-title">资讯|技术</p>
+                                <hr class="redshort" />
+                                <ul class="list-unstyled">
+                                    <li><a href="#">学校新闻</a></li>
+                                    <li><a href="#">行业资讯</a></li>
+                                    <li><a href="#">技术分享</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3 col-xs-6 text-center">
+                                <p class="footer-title">帮助中心</p>
+                                <hr class="redshort" />
+                                <ul class="list-unstyled">
+                                    <li><a href="#">帮助中心</a></li>
+                                </ul>
+                                <p class="footer-title">关于我们</p>
+                                <hr class="redshort" />
+                                <ul class="list-unstyled">
+                                    <li><a href="#">学校简介</a></li>
+                                    <li><a href="#">联系我们</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <p class="text-center">Copyright @桂林电子科技大学版权所有</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
     <!--脚部 end-->
 </body>
 </html>
+
