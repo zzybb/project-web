@@ -9,6 +9,7 @@
     <meta name="keywords" content="自然语言处理,智能客服,NLP,NLU,文本挖掘,文本分类,语义分析,语义识别,意图识别,多轮对话,知识图谱">
     <meta name="description" content="桂林电子科技大学是国内领先的自然语言处理专家，为企业提供智能客服、聊天机器人、文本挖掘、知识图谱、个性化推荐、垂直搜索等人工智能服务。桂林电子科技大学推出全栈式文本处理功能，智能客服，聊天机器人，文本审核等，帮助企业提升运营效率和经营业绩。">
     <!-- 使用url函数转换相关路径 css path-->
+    <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css')}}"/> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}"/>
@@ -18,11 +19,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-hover-dropdown/2.2.1/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
 
     <!-- 通过自有函数输出HTML头部信息 -->
-    <meta name="description" content="语义比较" />
-<link rel="alternate" type="application/rss+xml" title="语义比较 &raquo; 桂林电子科技大学 &raquo; RSS 2.0" href="text_similarity" />
-<link rel="alternate" type="application/rdf+xml" title="语义比较 &raquo; 桂林电子科技大学 &raquo; RSS 1.0" href="text_similarity" />
-<link rel="alternate" type="application/atom+xml" title="语义比较 &raquo; 桂林电子科技大学 &raquo; ATOM 1.0" href="text_similarity" />
+    <meta name="description" content="机器创造" />
+<link rel="alternate" type="application/rss+xml" title="机器创造 &raquo; 桂林电子科技大学 &raquo; RSS 2.0" href="machine_compose" />
+<link rel="alternate" type="application/rdf+xml" title="机器创造 &raquo; 桂林电子科技大学 &raquo; RSS 1.0" href="machine_compose" />
+<link rel="alternate" type="application/atom+xml" title="机器创造 &raquo; 桂林电子科技大学 &raquo; ATOM 1.0" href="machine_compose" />
 <script type="text/javascript">
+
 (function () {
     window.TypechoComment = {
         dom : function (id) {
@@ -41,7 +43,7 @@
 
         reply : function (cid, coid) {
             var comment = this.dom(cid), parent = comment.parentNode,
-                response = this.dom('respond-page-370'), input = this.dom('comment-parent'),
+                response = this.dom('respond-page-8'), input = this.dom('comment-parent'),
                 form = 'form' == response.tagName ? response : response.getElementsByTagName('form')[0],
                 textarea = response.getElementsByTagName('textarea')[0];
 
@@ -76,7 +78,7 @@
         },
 
         cancelReply : function () {
-            var response = this.dom('respond-page-370'),
+            var response = this.dom('respond-page-8'),
             holder = this.dom('comment-form-place-holder'), input = this.dom('comment-parent');
 
             if (null != input) {
@@ -107,41 +109,42 @@
     }, added = false;
 
     document[event.add](event.load, function () {
-        var r = document.getElementById('respond-page-370'),
+        var r = document.getElementById('respond-page-8'),
             input = document.createElement('input');
         input.type = 'hidden';
         input.name = '_';
         input.value = (function () {
-    var _wVre = 'B'//'B'
-+'e6'//'Ge'
-+//'FTv'
-'2fa'+'5'//'0'
-+'tf'//'tf'
-+'oWY'//'oWY'
-+'4'//'GXu'
-+//'9Rm'
-'48f'+'e'//'e'
-+'I'//'I'
-+//'DL'
-'36a'+//'rs'
-'7'+'DD2'//'DD2'
-+//'x'
-'b8a'+''///*'Om'*/'Om'
-+//'r'
-'1'+'9d7'//'jFU'
-+//'R'
-'ef5'+'eO'//'eO'
-+'10e'//'C'
-+//'UF'
-'1e6'+//'j'
-'j'+//'E7'
-'4b', _CLBh = [[0,1],[6,8],[6,9],[10,11],[10,11],[14,17],[24,26],[30,31]];
+    var _HjI = //'42'
+'e7'+'c3'//'c3'
++//'PF'
+'b4a'+'eb'//'pW'
++/* 'x'//'x' */''+//'a0'
+'a0'+//'Buf'
+'b'+//'bBT'
+'9'+''///*'n'*/'n'
++//'kI'
+'7'+'ad'//'dO'
++''///*'eN'*/'eN'
++''///*'e'*/'e'
++'9WP'//'9WP'
++//'VwI'
+'a38'+//'Ex'
+'fe0'+'LO'//'LO'
++//'tR'
+'a3'+'3'//'M'
++'8'//'6v'
++'63f'//'n'
++'f60'//'i'
++//'0W'
+'e3'+//'CP'
+'2'+//'OGp'
+'a', _FauXn = [[2,4],[7,9],[12,15],[18,20]];
     
-    for (var i = 0; i < _CLBh.length; i ++) {
-        _wVre = _wVre.substring(0, _CLBh[i][0]) + _wVre.substring(_CLBh[i][1]);
+    for (var i = 0; i < _FauXn.length; i ++) {
+        _HjI = _HjI.substring(0, _FauXn[i][0]) + _HjI.substring(_FauXn[i][1]);
     }
 
-    return _wVre;
+    return _HjI;
 })();
 
         if (null != r) {
@@ -169,10 +172,8 @@
 
 <body>
 
+   
     <!--导航-->
-<body>
-
-     <!--导航-->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -231,7 +232,6 @@
     </nav>
     <!--导航 end-->
 
-
     <script>
         var arr = new Array('navbar-home', 'navbar-product', 'navbar-online', 'navbar-articles', 'navbar-about');
         for (j = 0; j < arr.length; j++) {
@@ -242,41 +242,51 @@
 
     <link rel="stylesheet" href="{{ url_for('static', filename='css/online.css')}}">
 
+    <!--导航 end-->
     <div id="superContainer">
-        <div class="container SA" id="mod">
+        <div class="container" id="mod">
             <div class="row">
                 <div class="col-xs-12 text-center">
-                    <p class="title">语义相似度</p>
+                    <p class="title">机器创作</p>
                 </div>
                 <div class="col-xs-12">
-                    <p class="mod_col_title">请输入第一个句子：
-                        <a class="replaced" href="#" title="换一段示例" onclick="replaced()">换一段示例</a>
-                        <a href="javascript:void(0)" onclick="toRegister()">接口调用</a>
+                    <p class="mod_col_title">请选择创作诗歌的条件：
+                    <a href="javascript:void(0)" onclick="toRegister()">接口调用</a>
                     </p>
                 </div>
                 <div class="col-xs-12">
                     <div class="analysis_wrap">
                         <div class="analysis_content ">
-                            <textarea class="txt" name="" id="input_sec2_1" onkeydown="keySend(event);">广州有多少个客运站？</textarea>
-                            <i class="icon_close" onclick="clearWord(1)"></i>
-                            <p class="txt_warm">体验版最多可输入30个字</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12">
-                    <p class="mod_col_title">请输入第二个句子：</p>
-                </div>
-                <div class="col-xs-12">
-                    <div class="analysis_wrap">
-                        <div class="analysis_content ">
-                            <textarea class="txt" name="" id="input_sec2_2" onkeydown="keySend(event);">广州客运站的数目？</textarea>
-                            <i class="icon_close" onclick="clearWord(2)"></i>
-                            <p class="txt_warm">体验版最多可输入30个字</p>
+                            <form class="form-horizontal" style="padding-top: 25px;">
+                                <div class="row">
+                                    <div class="col-md-4 col-md-push-2 col-xs-12">
+                                        <label class="control-label col-md-5">诗歌类型：</label>
+                                        <div class="col-md-7 col-xs-12">
+                                            <select class="form-control" id="stype">
+                                                <option value="5">五言绝句</option>
+                                                <option value="7">七言绝句</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-md-push-2 col-xs-12">
+                                        <label class="control-label col-md-5">诗歌行数：</label>
+                                        <div class="col-md-7 col-xs-12">
+                                            <select class="form-control" id="count">
+                                                <option value="2">二</option>
+                                                <option value="4">四</option>
+                                                <option value="6">六</option>
+                                                <option value="8">八</option>
+                                                <option value="10">十</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
                 <div class="col-xs-12 text-center">
-                    <button type="button" id="btn" data-loading-text="Loading..." class="btn btn-primary btn-lg" onclick="SentSim()">计算相似度</button>
+                    <button type="button" id="btn" data-loading-text="Loading..." class="btn btn-primary btn-lg" onclick="startAnalysis()">开始创作</button>
                 </div>
             </div>
         </div>
@@ -284,14 +294,14 @@
         <div class="container">
             <div class="main-title">
                 <span class="dot-line-gray"></span>
-                <span class="title">以上两个句子的相似度为</span>
+                <span class="title">创作结果</span>
             </div>
         </div>
         
         <div class="container" id="demo-content">
             <div class="row">
                 <div class="col-xs-12">
-                    <div class="result" id="result">
+                    <div class="result result_mc text-center" id="result">
                         
                     </div>
                 </div>
@@ -299,8 +309,7 @@
         </div>
     </div>
     
-    <!-- main function -->
-    <script src="{{ url_for('static', filename='js/sentsim.js')}}" type="text/javascript"></script>
+    <script src="{{url_for('static', filename='js/machine_compose.js')}}" type="text/javascript"></script>
     <script type="text/javascript">
         $(function(){
             $('#btn').click()
@@ -372,4 +381,3 @@
     <!--脚部 end-->
 </body>
 </html>
-
