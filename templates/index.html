@@ -163,72 +163,7 @@
 <body>
 
     <!--导航-->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle x collapsed" data-toggle="collapse" data-target="#nav-collapse" aria-expanded="false">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/">
-                    <img src="{{ url_for('static', filename='res/mainPhoto.png')}}" class="hidden-sm"/>
-                </a>
-            </div>
-        
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="nav-collapse">
-                <ul class="nav navbar-nav">
-                    <li id="navbar-home" class="active"><a href="/">网站首页</a></li>
-                    <li id="navbar-product" class="dropdown">
-                        <a href="product-qa.html" class="dropdown-toggle" data-toggle="dropdown" role="button" data-hover='dropdown'>产品服务<span class="caret visible-xs-inline-block"></span></a>
-                        <ul class="dropdown-menu">
-
-                            <li><a href="#">智能客服</a></li>
-                            <li><a href="#">人机交互</a></li>
-                                            <li><a href="#">聊天机器人</a></li>
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                        </ul>
-                    </li>
-                    <li id="navbar-online" class="dropdown">
-                        <a href="text_analyzer" class="dropdown-toggle" data-toggle="dropdown" role="button" data-hover='dropdown'>在线体验<span class="caret visible-xs-inline-block"></span></a>
-                        <ul class="dropdown-menu">
-                                                                                                                                                                                                                                                                                                                            
-                            <li><a href="text_analyzer">文本分析</a></li>
-                            <li><a href="text_similarity">语义比较</a></li>
-                            <li><a href="machine_compose">机器创作</a></li>
-                            <li><a href="factual_qa">智能问答</a></li>
-                                                                                                                                
-                        </ul>
-                    </li>
-                    <li id="navbar-articles" class=""><a href="#">资讯|技术</a></li>
-                    <li id="navbar-articles" class=""><a href="#">帮助中心</a></li>
-                    <li id="navbar-about" class=""><a href="#">关于我们</a></li>
-                    <li class="search hidden-sm" style="display:none;">
-                        <form class="navbar-form navbar-left" method="post" action=''>
-                            <div class="input-group">
-                                <input type="text" class="form-control" id="s" name="s" placeholder="Search">
-                                <span class="input-group-btn">
-                                    <button class="btn btn-default" type="submit"><span class="fa fa-search"></span></button>
-                                </span>
-                            </div>
-                        </form>
-                    </li>
-                </ul>
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-    </nav>
-    <!--导航 end-->
-
-
-    <script>
-        var arr = new Array('navbar-home', 'navbar-product', 'navbar-online', 'navbar-articles', 'navbar-about');
-        for (j = 0; j < arr.length; j++) {
-            document.getElementById(arr[j]).classList.remove('active');
-        }
-        document.getElementById('navbar-home').classList.add('active');
-    </script>
+    {% include 'root/nav.html' %}
 
     <!--main-->
 
@@ -319,66 +254,7 @@
 
     
     <!--脚部-->
-		<footer>
-			<div class="container">
-				<div class="row" style="margin-bottom: 20px;">
-					<div class="col-md-2 -col-xs-12 text-center">
-						<a href="/"><img src="{{ url_for('static', filename='res/GUETMain.jpg')}}" class="img-responsive hidden-xs hidden-sm"/></a>
-						<p class='footer-h1 visible-xs visible-sm'>桂林电子科技大学</p>
-					</div>	
-					<div class="col-md-8 col-xs-12 footer-main">
-						<div class="row">
-							<div class="col-md-3 col-xs-6 text-center">
-								<p class="footer-title">产品服务</p>
-								<hr class="redshort" />
-								<ul class="list-unstyled">
-									<li><a href="#">智能客服</a></li>
-									<li><a href="#">人机交互</a></li>
-									<li><a href="#">聊天机器人</a></li>
-								</ul>
-							</div>
-							<div class="col-md-3 col-xs-6 text-center">
-								<p class="footer-title">在线体验</p>
-								<hr class="redshort" />
-								<ul class="list-unstyled">
-									<li><a href="text_analyzer">文本分析</a></li>
-                                    <li><a href="text_similarity">语义比较</a></li>
-									<li><a href="machine_compose">机器创作</a></li>
-									<li><a href="factual_qa">智能问答</a></li>
-								</ul>
-							</div>
-							<div class="col-md-3 col-xs-6 text-center">
-								<p class="footer-title">资讯|技术</p>
-								<hr class="redshort" />
-								<ul class="list-unstyled">
-									<li><a href="#">学校新闻</a></li>
-									<li><a href="#">行业资讯</a></li>
-									<li><a href="#">技术分享</a></li>
-								</ul>
-							</div>
-							<div class="col-md-3 col-xs-6 text-center">
-							    <p class="footer-title">帮助中心</p>
-								<hr class="redshort" />
-								<ul class="list-unstyled">
-									<li><a href="#">帮助中心</a></li>
-								</ul>
-								<p class="footer-title">关于我们</p>
-								<hr class="redshort" />
-								<ul class="list-unstyled">
-									<li><a href="#">学校简介</a></li>
-									<li><a href="#">联系我们</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-12">
-						<p class="text-center">Copyright @桂林电子科技大学版权所有</p>
-					</div>
-				</div>
-			</div>
-		</footer>
+		{% include 'root/footer.html' %}
     <!--脚部 end-->
 </body>
 </html>
